@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://ruhe-im-nervensystem.de/sitemap.xml
