@@ -1,23 +1,13 @@
-# Ruhe im Nervensystem – Version 2.1
+# Ruhe im Nervensystem – Version 2.1.1
 
-Dieses Release enthält Version 2.0 und 2.1 in einem Paket.
+Dieses Paket ist ein vollständiges Website-Release und kann den Inhalt des GitHub-Repositories ersetzen.
 
-## Enthalten
-- neue Startseite im freigegebenen Design
-- Portrait von Michael ohne gelben Träger
-- neues gemeinsames CSS
-- neue Navigation
-- Über mich
-- Leitbild
-- Kontakt
-- Platzhalter für Verstehen, Nachschlagen, Begleiten und Ruheort
-- Impressum, Datenschutz, 404, robots.txt, sitemap.xml
+## Online stellen
+1. ZIP-Datei entpacken.
+2. Den **Inhalt** des Ordners `rin-version-2-1-1` in das GitHub-Repository hochladen.
+3. Vorhandene Dateien ersetzen.
+4. Commit-Vorschlag: `Version 2.1.1 – mobile Startseite und Bilddarstellung optimiert`
+5. Netlify veröffentlicht die Änderung anschließend automatisch.
 
-## Veröffentlichung
-1. ZIP entpacken.
-2. Alle Inhalte in das GitHub-Repository kopieren bzw. ersetzen.
-3. Commit erstellen, z. B. `Version 2.1 – neues Design und persönlicher Bereich`.
-4. Netlify veröffentlicht automatisch.
-
-## Hinweis
-Impressum und Datenschutz vor Veröffentlichung final rechtlich prüfen.
+## Wichtig
+Nicht die ZIP-Datei selbst und nicht den äußeren Ordner als zusätzlichen Unterordner hochladen. `index.html`, `assets`, `verstehen` usw. müssen direkt auf der obersten Ebene des Repositories liegen.

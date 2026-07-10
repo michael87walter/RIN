@@ -1,14 +1,11 @@
 # Changelog
 
-## Version 2.1
-- Über mich ergänzt
-- Leitbild ergänzt
-- Kontaktseite vorbereitet
-- Footer-Links ergänzt
-
-## Version 2.0
-- neues visuelles Erscheinungsbild
-- neue Startseite
-- neues Portraitbild
-- neue Farben, Typografie, Karten, Buttons und Navigation
-- responsive Darstellung für Desktop und Mobilgeräte
+## Version 2.1.1
+- Porträt auf Smartphone und Desktop deutlich kontrastreicher dargestellt
+- Smartphone-Hero neu angeordnet: Bild zuerst, Text direkt darunter
+- Hauptnavigation auf Smartphones vollständig sichtbar und horizontal scrollbar
+- Bereich „Wofür Ruhe im Nervensystem steht“ zentriert ausgerichtet
+- „Wissen beruhigt …“ als gleichwertiger fünfter Punkt integriert
+- Abschlussbereich „Danke, dass du hier bist“ ergänzt
+- persönliche Signatur: „Von Herzen, dein Michael“
+- Abstände, Typografie und mobile Darstellung verfeinert
