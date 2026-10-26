@@ -22,6 +22,36 @@
     }
   }
 
+  function deleteAnalyticsCookies() {
+    const cookies = document.cookie.split(";");
+
+    cookies.forEach((cookie) => {
+      const name = cookie.split("=")[0].trim();
+
+      if (name === "_ga" || name.startsWith("_ga_")) {
+        const host = window.location.hostname;
+        const domains = [
+          "",
+          host,
+          "." + host,
+          ".ruhe-im-nervensystem.de"
+        ];
+
+        domains.forEach((domain) => {
+          const domainPart = domain
+            ? "; domain=" + domain
+            : "";
+
+          document.cookie =
+            name +
+            "=; expires=Thu, 01 Jan 1970 00:00:00 GMT" +
+            "; path=/" +
+            domainPart;
+        });
+      }
+    });
+  }
+
   function loadAnalytics() {
     if (window.rinAnalyticsLoaded) return;
     window.rinAnalyticsLoaded = true;
@@ -116,16 +146,19 @@
     );
 
    
+
 reject.addEventListener("click", () => {
   const wasGranted = getConsent() === "granted";
 
   saveConsent("denied");
+  deleteAnalyticsCookies();
   banner.remove();
 
   if (wasGranted) {
     window.location.reload();
   }
 });
+
 
 
     accept.addEventListener("click", () => {
