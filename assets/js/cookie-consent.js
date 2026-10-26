@@ -4,7 +4,7 @@
 
   const STORAGE_KEY = "rin-analytics-consent";
   const MEASUREMENT_ID = "G-3BE6WVB4PJ";
- const TEST_MODE = true;
+ const TEST_MODE = false;
   function getConsent() {
     try {
       return localStorage.getItem(STORAGE_KEY);
