@@ -141,6 +141,11 @@
     }
   }
 
+  // Ermöglicht das erneute Öffnen der Datenschutzeinstellungen
+  window.rinOpenCookieSettings = function () {
+    showBanner();
+  };
+
   if (document.readyState === "loading") {
     document.addEventListener("DOMContentLoaded", init);
   } else {
