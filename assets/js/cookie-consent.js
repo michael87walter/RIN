@@ -155,9 +155,12 @@ reject.addEventListener("click", () => {
   deleteAnalyticsCookies();
   banner.remove();
 
-  if (wasGranted) {
-    window.location.reload();
-  }
+  
+if (wasGranted) {
+  window["ga-disable-" + MEASUREMENT_ID] = true;
+  window.location.reload();
+}
+
 });
 
 
