@@ -115,10 +115,18 @@
       "Akzeptieren", "#426b56", "#ffffff"
     );
 
-    reject.addEventListener("click", () => {
-      saveConsent("denied");
-      banner.remove();
-    });
+   
+reject.addEventListener("click", () => {
+  const wasGranted = getConsent() === "granted";
+
+  saveConsent("denied");
+  banner.remove();
+
+  if (wasGranted) {
+    window.location.reload();
+  }
+});
+
 
     accept.addEventListener("click", () => {
       saveConsent("granted");
