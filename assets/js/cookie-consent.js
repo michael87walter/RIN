@@ -73,21 +73,7 @@
 
    
     document.head.appendChild(script);
-
-    document.addEventListener("click", function (event) {
-      const button = event.target.closest(
-        'a[data-rin-purchase="guide"]'
-      );
-
-      if (!button) return;
-
-      window.gtag("event", "guide_kaufbutton_klick", {
-        guide_name: "Ruhe fuer dein Nervensystem",
-        link_url: button.href
-      });
-    });
   }
-
 
   function showBanner() {
     if (document.getElementById("rin-consent-banner")) return;
